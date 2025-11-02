@@ -61,7 +61,7 @@ box-shadow: 0 1px 55px rgb(84, 84, 199);
 @media screen and (max-width: 600px) {
 
   .main{
-    display: none;
+    display:grid;
   }
   .inner {
     width: 70%;   
