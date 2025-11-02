@@ -1,3 +1,7 @@
+.main{
+  display: flex;
+}
+
 .inner{
 width: 500px;
 height: fit-content;
@@ -56,8 +60,11 @@ box-shadow: 0 1px 55px rgb(84, 84, 199);
 
 @media screen and (max-width: 600px) {
 
+  .main{
+    display: none;
+  }
   .inner {
-    width: 90%;   
+    width: 70%;   
     margin-top: 50px;
     padding: 20px;
   }

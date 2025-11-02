@@ -44,7 +44,7 @@ export class Temp extends Component{
 
     render(){
         return(
-            <div style={{display:"flex"}}>
+            <div className="main">
             <div className="inner">
                 <input type="text" onChange={(e)=>this.save(e)} value={this.state.text}/>
                 <button className="submit" onClick={this.button}>Add</button>
