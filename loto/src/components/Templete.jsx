@@ -11,6 +11,9 @@ export class Temp extends Component{
        this.setState({text:e.target.value})
     }
     button=()=>{
+        if(this.state.text ===""){
+            return;
+        }
         this.setState({list:[...this.state.list,this.state.text],text:""})
     }
     delete=(index)=>{
