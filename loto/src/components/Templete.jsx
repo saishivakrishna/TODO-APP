@@ -46,7 +46,7 @@ export class Temp extends Component{
         return(
             <div className="main">
             <div className="inner">
-                <input type="text" onChange={(e)=>this.save(e)} value={this.state.text}/>
+                <input type="text" onChange={(e)=>this.save(e)} value={this.state.text} required/>
                 <button className="submit" onClick={this.button}>Add</button>
                 <div>
                  {this.state.list.map((data,index)=>
