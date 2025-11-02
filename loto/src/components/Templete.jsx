@@ -34,7 +34,8 @@ export class Temp extends Component{
             list:l,
             updatedData:"",
             index:null,
-            toUpdateData:false
+            toUpdateData:false,
+            text:""
         })
 
 
@@ -45,7 +46,7 @@ export class Temp extends Component{
         return(
             <div style={{display:"flex"}}>
             <div className="inner">
-                <input type="text" onChange={(e)=>this.save(e)}/>
+                <input type="text" onChange={(e)=>this.save(e)} value={this.state.text}/>
                 <button className="submit" onClick={this.button}>Add</button>
                 <div>
                  {this.state.list.map((data,index)=>
