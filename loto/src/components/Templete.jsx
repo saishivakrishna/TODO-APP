@@ -16,7 +16,7 @@ export class Temp extends Component{
     delete=(index)=>{
         let l=[...this.state.list]
         l.splice(index,1)
-        this.setState({list:l})
+        this.setState({list:l,toUpdateData:false})
 
     }
    edit = (i) => {
